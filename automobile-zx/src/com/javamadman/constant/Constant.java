@@ -4,7 +4,7 @@ package com.javamadman.constant;
  * Created by IntelliJ IDEA
  * Date: 2018/4/14
  * Time: 10:20
- *
+ * 常量
  * @author zx
  */
 public interface Constant {

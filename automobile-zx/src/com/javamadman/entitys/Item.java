@@ -4,7 +4,7 @@ package com.javamadman.entitys;
  * Created by IntelliJ IDEA
  * Date: 2018/4/13
  * Time: 17:46
- *
+ * 订单项
  * @author zx
  */
 public class Item extends BaseEntity {

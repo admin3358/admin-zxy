@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by IntelliJ IDEA
  * Date: 2018/4/13
  * Time: 18:14
- *
+ * 汽车记录
  * @author zx
  */
 public class Record extends BaseEntity {

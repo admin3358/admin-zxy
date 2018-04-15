@@ -16,6 +16,8 @@ public class User extends BaseEntity {
 
     private String uPassword;//用户密码
 
+    private String phone;//用户手机号
+
     private Integer checkCode;//验证码
 
     private Integer verifyCode;//校验码
@@ -39,6 +41,14 @@ public class User extends BaseEntity {
 
     public void setuPassword(String uPassword) {
         this.uPassword = uPassword;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Integer getCheckCode() {

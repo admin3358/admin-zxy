@@ -4,7 +4,7 @@ package com.javamadman.entitys;
  * Created by IntelliJ IDEA
  * Date: 2018/4/13
  * Time: 18:09
- *
+ * 支付
  * @author zx
  */
 public class Pay extends BaseEntity {

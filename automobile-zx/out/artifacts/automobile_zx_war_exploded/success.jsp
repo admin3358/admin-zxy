@@ -13,7 +13,7 @@
 </head>
 <body>
 
-
+    注册成功
 
     <c:if test="${requestScope.all != null}">
         <c:forEach items="${requestScope.all}" var="area" varStatus="status" begin="0">

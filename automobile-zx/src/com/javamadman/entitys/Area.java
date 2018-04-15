@@ -4,7 +4,7 @@ package com.javamadman.entitys;
  * Created by IntelliJ IDEA
  * Date: 2018/4/13
  * Time: 18:21
- *
+ * 区域
  * @author zx
  */
 public class Area extends BaseEntity {

@@ -2,6 +2,8 @@ package com.javamadman.dao.impl;
 
 import com.javamadman.dao.RecordDao;
 import com.javamadman.entitys.Record;
+import com.javamadman.utils.DataSourceUtils;
+import org.apache.commons.dbutils.QueryRunner;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -10,10 +12,13 @@ import java.util.List;
  * Created by IntelliJ IDEA
  * Date: 2018/4/14
  * Time: 10:42
- *
+ * 处理汽车记录相关数据访问方法
  * @author zx
  */
 public class RecordDaoImpl implements RecordDao {
+
+    QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+
     @Override
     public int save(Record record) throws Exception {
         return 0;

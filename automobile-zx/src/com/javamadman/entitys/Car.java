@@ -4,7 +4,7 @@ package com.javamadman.entitys;
  * Created by IntelliJ IDEA
  * Date: 2018/4/13
  * Time: 17:47
- *
+ * 汽车
  * @author zx
  */
 public class Car extends BaseEntity {
@@ -42,7 +42,7 @@ public class Car extends BaseEntity {
 
     private Integer isPrice;//是否特价
 
-    private Integer kId;//分类编号
+    private Kind kind;//分类编号
 
     public Item getItem() {
         return item;
@@ -148,11 +148,11 @@ public class Car extends BaseEntity {
         this.isPrice = isPrice;
     }
 
-    public Integer getkId() {
-        return kId;
+    public Kind getKind() {
+        return kind;
     }
 
-    public void setkId(Integer kId) {
-        this.kId = kId;
+    public void setKind(Kind kind) {
+        this.kind = kind;
     }
 }

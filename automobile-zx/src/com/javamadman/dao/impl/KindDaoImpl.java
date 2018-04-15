@@ -2,6 +2,8 @@ package com.javamadman.dao.impl;
 
 import com.javamadman.dao.KindDao;
 import com.javamadman.entitys.Kind;
+import com.javamadman.utils.DataSourceUtils;
+import org.apache.commons.dbutils.QueryRunner;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -10,10 +12,13 @@ import java.util.List;
  * Created by IntelliJ IDEA
  * Date: 2018/4/14
  * Time: 10:41
- *
+ * 处理汽车分类相关数据访问方法
  * @author zx
  */
 public class KindDaoImpl implements KindDao {
+
+    QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+
     @Override
     public int save(Kind kind) throws Exception {
         return 0;
