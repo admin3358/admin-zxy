@@ -39,10 +39,10 @@ public class RegisterServlet extends HttpServlet {
         try {
             int row = userService.save(user);
             if(row>0) {
-                request.getRequestDispatcher("/success.jsp").forward(request,response);
+                request.getRequestDispatcher("/jsp/success.jsp").forward(request,response);
             }else {
                 request.getSession().setAttribute("row",row);
-                response.sendRedirect("/registerTest.jsp");
+                response.sendRedirect("/jsp/registerTest.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

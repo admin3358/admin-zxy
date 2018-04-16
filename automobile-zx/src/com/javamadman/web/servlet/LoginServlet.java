@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
                 request.getRequestDispatcher("/index.jsp").forward(request,response);
             }else {
                 request.getSession().setAttribute("userByPhone",userByPhone);
-                response.sendRedirect("/loginTest.jsp");
+                response.sendRedirect("/jsp/loginTest.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

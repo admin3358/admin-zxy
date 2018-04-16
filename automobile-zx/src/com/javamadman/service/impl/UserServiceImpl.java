@@ -25,7 +25,8 @@ public class UserServiceImpl implements UserService {
         User userByPhone = userDao.findUserByPhone(user.getPhone());
         int row = -1;
         if(userByPhone != null){
-            return row;
+            //return row;
+            throw new RuntimeException("用户名已经存在");
         }
         row = userDao.save(user);
 
@@ -55,6 +56,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findUserByPhone(String phone) throws SQLException {
         UserDao userDao = new UserDaoImpl();
-        return userDao.findUserByPhone(phone);
+        User userByPhone = userDao.findUserByPhone(phone);
+        if(userByPhone == null){
+            throw new RuntimeException("用户不存在");
+        }
+        return userByPhone;
     }
 }

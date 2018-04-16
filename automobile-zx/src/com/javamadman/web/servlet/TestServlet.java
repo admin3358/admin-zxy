@@ -34,6 +34,6 @@ public class TestServlet extends HttpServlet {
             e.printStackTrace();
         }
         request.setAttribute("all",all);
-        request.getRequestDispatcher("/success.jsp").forward(request,response);
+        request.getRequestDispatcher("/jsp/success.jsp").forward(request,response);
     }
 }
